@@ -19,47 +19,91 @@ body {
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     width: 90%;
-    max-width: 400px;
+    max-width: 450px;
     text-align: center;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2rem;
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
-.scoreboard {
+.stats-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #475569;
+    margin-top: 0.5rem;
     font-weight: bold;
-    font-size: 1.2rem;
-    color: #0369a1;
+}
+
+.screen {
+    transition: all 0.3s ease;
+}
+
+.hidden {
+    display: none !important;
+}
+
+h2 {
+    color: #1e293b;
+    margin-bottom: 1rem;
+}
+
+.grade-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.grade-btn {
+    padding: 12px;
+    font-size: 1.1rem;
+    background: #f0fdf4;
+    border: 2px solid #bbf7d0;
+    color: #166534;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.grade-btn:hover {
+    background: #bbf7d0;
 }
 
 .mascot-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .speech-bubble {
-    background: #f0fdf4;
-    border: 2px solid #bbf7d0;
+    background: #f8fafc;
+    border: 2px solid #e2e8f0;
     padding: 10px 15px;
     border-radius: 12px;
-    position: relative;
     margin-bottom: 10px;
     font-size: 0.95rem;
-    color: #166534;
+    color: #334155;
 }
 
 .archie-avatar {
     font-size: 3rem;
 }
 
+.timer-box {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #dc2626;
+    margin-bottom: 1rem;
+}
+
 .quiz-box #question {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
     color: #1e293b;
@@ -68,7 +112,7 @@ header {
 #answer-input {
     width: 100%;
     padding: 12px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     border: 2px solid #cbd5e1;
     border-radius: 8px;
     margin-bottom: 1rem;
@@ -85,7 +129,6 @@ header {
     font-size: 1.1rem;
     font-weight: bold;
     cursor: pointer;
-    transition: background 0.2s;
 }
 
 #submit-btn:hover {
