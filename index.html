@@ -11,21 +11,40 @@
         <!-- Header Section -->
         <header>
             <h1>🦅 Numbr</h1>
-            <div class="scoreboard">Score: <span id="score">0</span></div>
+            <div class="stats-header">
+                <div class="stat-item">⚡ Energy: <span id="energy-count">30</span>/30</div>
+                <div class="stat-item">✨ Level <span id="level-display">1</span> (<span id="xp-display">0</span> XP)</div>
+            </div>
         </header>
 
-        <!-- Mascot Interaction Area -->
-        <div class="mascot-box">
-            <div id="archie-bubble" class="speech-bubble">Hi! Ready to fly high with math?</div>
+        <!-- Grade Selection Screen -->
+        <div id="grade-screen" class="screen">
+            <h2>Select Your Grade</h2>
+            <div id="archie-bubble-setup" class="speech-bubble">Hi! Choose your grade to start flying!</div>
             <div class="archie-avatar">🦅</div>
+            <div class="grade-buttons">
+                <button class="grade-btn" onclick="startGame(1)">1st Grade</button>
+                <button class="grade-btn" onclick="startGame(2)">2nd Grade</button>
+                <button class="grade-btn" onclick="startGame(3)">3rd Grade</button>
+                <button class="grade-btn" onclick="startGame(4)">4th Grade & Up</button>
+            </div>
         </div>
 
-        <!-- Gameplay Area -->
-        <main class="quiz-box">
-            <div id="question">Loading question...</div>
-            <input type="number" id="answer-input" placeholder="Your answer" autocomplete="off">
-            <button id="submit-btn">Submit</button>
-        </main>
+        <!-- Main Gameplay Screen (Hidden initially) -->
+        <div id="game-screen" class="screen hidden">
+            <div class="mascot-box">
+                <div id="archie-bubble" class="speech-bubble">Let's solve this!</div>
+                <div class="archie-avatar">🦅</div>
+            </div>
+
+            <div class="timer-box">⏳ Time Left: <span id="timer-count">15</span>s</div>
+
+            <main class="quiz-box">
+                <div id="question">0 + 0 = ?</div>
+                <input type="number" id="answer-input" placeholder="Your answer" autocomplete="off">
+                <button id="submit-btn">Submit</button>
+            </main>
+        </div>
     </div>
 
     <script src="script.js"></script>
