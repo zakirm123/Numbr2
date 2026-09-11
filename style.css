@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.game-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.scoreboard {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #0369a1;
+}
+
+.mascot-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.speech-bubble {
+    background: #f0fdf4;
+    border: 2px solid #bbf7d0;
+    padding: 10px 15px;
+    border-radius: 12px;
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: #166534;
+}
+
+.archie-avatar {
+    font-size: 3rem;
+}
+
+.quiz-box #question {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #1e293b;
+}
+
+#answer-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #0284c7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#submit-btn:hover {
+    background: #0369a1;
+}
