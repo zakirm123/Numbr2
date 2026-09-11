@@ -18,9 +18,13 @@
         </header>
 
         <!-- Grade Selection Screen -->
-        <div id="grade-screen" class="screen">
-            <h2>Select Your Grade</h2>
-            <div id="archie-bubble-setup" class="speech-bubble">Hi! Choose your grade to start flying!</div>
+        <!-- Inside <div id="game-screen"> template block -->
+<div class="mascot-box">
+    <div id="archie-bubble" class="speech-bubble">Let's solve this!</div>
+    <!-- Added id="archie-avatar" below -->
+    <div id="archie-avatar" class="archie-avatar">🦅</div>
+</div>
+
             <div class="archie-avatar">🦅</div>
             <div class="grade-buttons">
                 <button class="grade-btn" onclick="startGame(1)">1st Grade</button>
