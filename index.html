@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbr - Math Game with Archie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Header Section -->
+        <header>
+            <h1>🦅 Numbr</h1>
+            <div class="scoreboard">Score: <span id="score">0</span></div>
+        </header>
+
+        <!-- Mascot Interaction Area -->
+        <div class="mascot-box">
+            <div id="archie-bubble" class="speech-bubble">Hi! Ready to fly high with math?</div>
+            <div class="archie-avatar">🦅</div>
+        </div>
+
+        <!-- Gameplay Area -->
+        <main class="quiz-box">
+            <div id="question">Loading question...</div>
+            <input type="number" id="answer-input" placeholder="Your answer" autocomplete="off">
+            <button id="submit-btn">Submit</button>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
